@@ -82,7 +82,7 @@
 					>awesome-vue</a
 				>
 			</li>
-			<li>{{ nickname }}</li>
+			<li class="nickname" @click="add">{{ nickname }}</li>
 		</ul>
 	</div>
 </template>
@@ -94,11 +94,14 @@ export default {
 		msg: String,
 	},
 	data() {
-		nickname: '康康';
+		return {
+			nickname: '康康',
+		};
 	},
 	methods: {
 		add() {
 			console.log('Hello Word!');
+			console.log('I am kk');
 		},
 	},
 };
@@ -119,5 +122,9 @@ li {
 }
 a {
 	color: #42b983;
+}
+.nickname {
+	font-size: 24px;
+	color: green;
 }
 </style>
