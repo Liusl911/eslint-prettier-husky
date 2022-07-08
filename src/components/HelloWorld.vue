@@ -83,6 +83,7 @@
 				>
 			</li>
 			<li class="nickname" @click="add">{{ nickname }}</li>
+			<li>{{ age }}</li>
 		</ul>
 	</div>
 </template>
@@ -96,6 +97,7 @@ export default {
 	data() {
 		return {
 			nickname: '康康',
+			age: 12,
 		};
 	},
 	methods: {
